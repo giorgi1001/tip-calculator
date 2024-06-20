@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./script.js" defer></script>
+    <title>tip calculator app</title>
+  </head>
+  <body>
+    <main>
+      <div class="head">
+        <img src="./images/logo.svg" alt="title img" />
+      </div>
+      <section>
+        <div class="top-half">
+          <div class="bill">
+            <label for="Bill">Bill</label>
+            <div class="amount">
+              <img src="./images/icon-dollar.svg" alt="dollar icon" />
+              <input
+                id="cheki"
+                class="first input"
+                type="number"
+                name="Bill"
+                placeholder="0"
+              />
+            </div>
+          </div>
+          <p class="tip">Select Tip %</p>
+
+          <div class="select-tip">
+            <button class="percente">5%</button>
+            <button class="percente">10%</button>
+            <button class="percente">15%</button>
+            <button class="percente">25%</button>
+            <button class="percente">50%</button>
+            <input class="custom" type="number" placeholder="Custom" />
+          </div>
+
+          <div class="numberOfPeople">
+            <div class="zero">
+              <p>Number of People</p>
+              <span id="peopleZero"></span>
+            </div>
+
+            <div class="amount">
+              <img src="./images/icon-person.svg" alt="person icon" />
+              <input
+                id="adamianebis-raodenoba"
+                class="second input"
+                type="number"
+                placeholder="0"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="result">
+          <div class="counted tip-amount">
+            <div>
+              <p>Tip Amount</p>
+              <span>/ person</span>
+            </div>
+            <div>
+              <span class="usd">$</span>
+              <span class="first-amount" id="total1">0.00</span>
+            </div>
+          </div>
+          <div class="counted total">
+            <div>
+              <p>Total</p>
+              <span>/ person</span>
+            </div>
+            <div>
+              <span class="usd">$</span>
+              <span class="second-amount" id="total2">0.00</span>
+            </div>
+          </div>
+
+          <button id="reset">RESET</button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

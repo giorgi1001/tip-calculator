@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Space Mono", monospace;
+  font-weight: bold;
+  background-color: #c5e4e7;
+}
+main {
+  width: 100%;
+  max-width: 600px;
+  background-color: #c5e4e7;
+}
+.head {
+  max-width: 600px;
+  padding: 50px 144px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  padding: 32px 24px;
+  background-color: #fff;
+  border-radius: 23px 23px 0px 0px;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.top-half {
+  padding: 0 8px 0;
+}
+.bill label,
+.tip,
+.numberOfPeople p {
+  color: #5e7a7d;
+}
+.bill label {
+  font-size: 16px;
+}
+.amount {
+  margin: 6px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.input {
+  border: transparent;
+  text-align: end;
+  width: 100%;
+  height: 48px;
+  background-color: #f3f9fa;
+  padding: 6px 17.5px 6px 19.3px;
+  outline: none;
+}
+.custom {
+  width: 100%;
+  font-size: 24px;
+  border: transparent;
+  text-align: center;
+  outline: none;
+  color: #00474b;
+  font-weight: bold;
+}
+input:focus {
+  border: 1px solid #26c2ae;
+}
+
+.amount img {
+  position: absolute;
+  left: 20px;
+}
+.amount span {
+  font-size: 24px;
+  color: #00474b;
+}
+.numberOfPeople span {
+  font-size: 13px;
+  color: #e17457;
+  text-align: right;
+}
+.zero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.select-tip {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  column-gap: 16.6px;
+  row-gap: 16px;
+}
+
+.percente {
+  background-color: #00474b;
+  color: white;
+  font-size: 24px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+}
+
+.tip {
+  margin: 32px 0 16px;
+  background-color: white;
+}
+
+.custom {
+  background-color: #f3f9fa !important;
+}
+.custom {
+  font-size: 24px;
+}
+.numberOfPeople {
+  margin-top: 32px;
+}
+.result {
+  margin-top: 32px;
+  padding: 37px 22px 24px 24px;
+  border-radius: 15px;
+  background-color: #00474b;
+}
+.counted {
+  display: flex;
+  justify-content: space-between;
+}
+.counted p {
+  font-size: 16px;
+  color: #fff;
+}
+.counted span {
+  color: #7f9d9f;
+}
+.first-amount,
+.second-amount {
+  font-size: 32px;
+  letter-spacing: -0.67px;
+  color: #26c2ae !important;
+}
+#reset {
+  display: block;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  background-color: #0d686d;
+  padding: 9px 32px;
+  margin-top: 35px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #00474b;
+}
+
+.total {
+  margin-top: 22px;
+}
+.usd {
+  font-size: 32px;
+  color: #26c2ae !important ;
+}
+#peopleZero {
+  color: #e17457;
+  font-size: 16px;
+}
+.input,
+.percente,
+#reset {
+  cursor: pointer;
+}
+.input {
+  font-size: 24px;
+  color: #00474b;
+  font-weight: bold;
+}
+.percente:hover,
+#reset:hover {
+  background-color: #9fe8df;
+}
+.percente:hover {
+  color: #00474b;
+}
+.reset-hover:hover {
+  background-color: #9fe8df !important ;
+}
+
+@media only screen and (min-width: 1000px) {
+  main,
+  .head {
+    max-width: 920px;
+  }
+  section {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+    margin-top: 48px;
+    border-radius: 25px;
+    padding: 32px 32px 32px 48px;
+  }
+  .top-half {
+    width: 100%;
+    margin-top: 13px;
+    margin-bottom: 16px;
+  }
+  .result {
+    width: 100%;
+    margin: 0;
+    padding: 56px 40px 40px;
+  }
+  .select-tip {
+    width: 100%;
+    grid-template-columns: 31% 31% 31%;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 14px;
+    row-gap: 16px;
+    margin-bottom: 40px;
+  }
+  .tip {
+    margin-top: 40px;
+    margin-bottom: 16px;
+  }
+  #reset {
+    margin-top: 161px;
+  }
+}
